@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Date</title>
+    <script type="text/javascript">
+        function setDate(){
+        document.getElementById('date').innerHTML=Date();
+    }
+    </script>
+    <!-- <script type="text/javascript" src="2code/js/setDate.js"></script> -->
+    <style type="text/css">
+        *{
+            font-family: sans-serif;
+            font-weight: 100;
+            color: #00A3AD;
+            margin: 1%;
+        }
+        div{
+            color: #FFF;
+            background: rgba(145, 220, 232, 1);
+            border: 1px solid #05A9C7;
+            text-align: center;
+            width: 80%;
+            line-height: 150%;
+            margin: 1% auto;
+            padding: 2%;
+        }
+        span{color: #FFF;}
+    </style>
+</head>
+<!-- <body>
+    <script> -->
+        <body onload="setDate()">
+            <div> The current date and time is
+                <br>
+                <span id="date"></span>
+                <br>
+            It's snacktime!</div>
+    <!-- </script>
+</body> -->
+</html>
