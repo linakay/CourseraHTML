@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset="UTF-8">
+    <title>Click</title>
+    <style type="text/css">
+        *{
+            font-family: sans-serif;
+            font-weight: 100;
+            font-size: 150%;
+        }
+        div{
+            width: 25%;
+            line-height: 150%;
+            padding: 2%;
+            color: #FFF;
+            background: #98DBCE;
+            margin: 2% auto;
+            text-align: center;
+        }
+        .button {
+            -webkit-transition-duration: 0.4s; /* Safari */
+            transition-duration: 0.4s;
+            }
+
+        .button:hover {
+            background-color: #00B7BD;
+            }
+    </style>
+    <script>
+        function message(msg){alert(msg);
+        }
+    </script>
+</head>
+<body>
+    <div class="button" onclick="message('Hooray!')">
+        Click me!
+    </div>
+</body>
+</html>
