@@ -15,20 +15,26 @@
             padding: 2%;
             color: #FFF;
             background: #98DBCE;
+            border: 1px solid #00859B;
             margin: 2% auto;
             text-align: center;
         }
         .button {
-            -webkit-transition-duration: 0.4s; /* Safari */
+            -webkit-transition-duration: 0.4s;
             transition-duration: 0.4s;
-            }
-
+        }
         .button:hover {
             background-color: #00B7BD;
-            }
+        }
+        p{
+            text-align: center;
+            margin: 0 auto;
+        }
     </style>
     <script>
-        function message(msg){alert(msg);
+        function message(msg){
+            // alert(msg)
+            document.getElementById('output').innerHTML = msg;
         }
     </script>
 </head>
@@ -36,5 +42,6 @@
     <div class="button" onclick="message('Hooray!')">
         Click me!
     </div>
+    <p id='output'></p>
 </body>
 </html>
