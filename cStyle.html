@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset="UTF-8">
+    <title>Show/Hide</title>
+    <style type="text/css">
+        *{
+            font-family: sans-serif;
+            font-weight: 100;
+            margin: 1%;
+            text-align: center;
+        }
+        .closed{
+            display: none;
+        }
+        .open{
+            display: block;
+        }
+        button{
+            width: 25%;
+            padding: 2%;
+            color: #FFF;
+            background: rgba(0, 183, 189, .5);
+            border: 1px solid #00A3AD;
+            margin-left: 1%;
+            text-align: center;
+            font-size: 200%;
+            -webkit-transition-duration: 0.2s;
+            transition-duration: 0.2s;
+        }
+        button:hover{
+            background: rgba(0, 183, 189, 1);
+        }
+        #demo{
+            color: #FFF;
+            background: #05A9C7;
+            background: -webkit-linear-gradient(#05A9C7 0%, rgba(181, 227, 216) 100%);
+            background: -o-linear-gradient(#05A9C7 0%, rgba(181, 227, 216) 100%);
+            /*background: -webkit-linear-gradient(#05A9C7 0%, 100%);*/
+            background: linear-gradient(#05A9C7 0%, rgba(181, 227, 216) 100%);
+            padding: 2%;
+            font-size: 125%;
+        }
+    </style>
+    <script type="text/javascript">
+        function closeMe(){
+            x = document.getElementById("demo");
+            x.className = "closed";
+        }
+        function openMe(){
+            x = document.getElementById("demo");
+            x.className = "open";
+        }
+    </script>
+</head>
+<body>
+    <h1>Fun with buttons!</h1>
+    <p>Click on the buttons below</p>
+
+    <button type="button" onclick="openMe()">Show</button>
+    <button type="button" onclick="closeMe()">Hide</button>
+
+    <p id="demo">You can open and close this paragraph using the buttons above.</p>
+</body>
+</html>
